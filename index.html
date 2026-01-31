@@ -43,10 +43,26 @@
         <section class="markets">
             <h2>Retrouvez-nous sur les marchés</h2>
             <ul>
-                <li><strong>Lundi :</strong> <span id="txt-marche-lundi">...</span></li>
-                <li><strong>Mercredi (Été) :</strong> Cazères sur Garonne</li>
-                <li><strong>Samedi :</strong> Aurignac, Cazères, Luchon</li>
+                <li>
+                    <strong>Lundi :</strong> 
+                    <span id="txt-marche-lundi">Chargement...</span>
+                </li>
+                
+                <li>
+                    <strong>Mercredi :</strong> 
+                    <span id="txt-marche-mercredi">Chargement...</span>
+                </li>
+                
+                <li>
+                    <strong>Samedi :</strong> 
+                    <span id="txt-marche-samedi">Chargement...</span>
+                </li>
             </ul>
+            
+            <div style="background-color: #ffe4e1; padding: 10px; border-radius: 5px; margin-top: 10px;">
+                <strong>Info Viande : </strong> 
+                <span id="txt-intro-veau">Voir nos disponibilités...</span>
+            </div>
         </section>
 
         <section class="contact">
@@ -62,7 +78,7 @@
 
     <script>
         // REMPLACE CETTE URL par ton lien Google Sheets (CSV)
-        const sheetUrl = 'TON_LIEN_CSV_ICI';
+        const sheetUrl = 'https://docs.google.com/spreadsheets/d/1fWqpoxCBhDrhwZCWvClK3ebY49NGt5tr0YBpMaRy3rA/edit?usp=sharing';
 
         async function loadData() {
             try {
